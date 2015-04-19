@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.22609.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RazorGlide", "RazorGlide\RazorGlide.csproj", "{5001D109-E5B1-4262-94B5-A4B62F96FBF5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RazorGlide.TestWebApp", "RazorGlide.TestWebApp\RazorGlide.TestWebApp.csproj", "{5001D109-E5B1-4262-94B5-A4B62F96FBF5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RazorGlide", "RazorGlide\RazorGlide.csproj", "{C849B90A-9EBF-4E99-A8D9-843167B27387}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{5001D109-E5B1-4262-94B5-A4B62F96FBF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5001D109-E5B1-4262-94B5-A4B62F96FBF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5001D109-E5B1-4262-94B5-A4B62F96FBF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C849B90A-9EBF-4E99-A8D9-843167B27387}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C849B90A-9EBF-4E99-A8D9-843167B27387}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C849B90A-9EBF-4E99-A8D9-843167B27387}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C849B90A-9EBF-4E99-A8D9-843167B27387}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

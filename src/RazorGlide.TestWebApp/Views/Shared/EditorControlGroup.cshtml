@@ -1,0 +1,13 @@
+@using RazorGlide.Forms
+@inherits EditorControlGroupTemplate
+@{
+    string invalidCssClass = !Properties.IsValid ? "has-error" : "";
+    string depthCssClass = "form-group-depth" + ViewData.TemplateInfo.TemplateDepth;
+}
+<div class="form-group @invalidCssClass @depthCssClass" data-section="control-group" data-propertyname="@Html.Name("")">
+    @Html.Label(Properties.Expression, Properties.Label, new { @class = "control-label" })
+    @Html.ValidationMessage(Properties.Expression)
+    <div>
+        @Properties.EditorHtml
+    </div>
+</div>

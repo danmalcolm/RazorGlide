@@ -1,3 +1,4 @@
+using System.Text.RegularExpressions;
 using System.Web.Mvc;
 
 namespace RazorGlide.Forms
@@ -11,7 +12,7 @@ namespace RazorGlide.Forms
             
         public static string UserFriendlyTitle(string label)
         {
-            return TextDisplayHelper.ExpandCamelHumps(label, " ");
+            return Regex.Replace(label, "([a-z])(?=[A-Z])", "$1" + " ");
         }
     }
 }

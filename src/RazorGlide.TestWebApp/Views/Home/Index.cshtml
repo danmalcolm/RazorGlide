@@ -1,0 +1,30 @@
+﻿@using RazorGlide.Forms
+@model RazorGlide.Controllers.EditorTestModel
+
+    @{
+    ViewBag.Title = "Home Page";
+}
+
+
+<div>
+    
+    <h2>Simple Properties</h2>
+    @Html.EditorControlGroup("Name")
+    @Html.EditorControlGroup("Name2")
+    
+    <h2>Nested Simple Properties</h2>
+    @Html.EditorControlGroup("ContactInformation.Name.Title")
+    
+    <h2>Complex Objects</h2>
+    @Html.EditorControlGroup("ContactInformation")
+
+    <h2>Validation</h2>
+    @Html.EditorControlGroup("Name3")
+
+    <h2>Templated Delegates</h2>
+    @Html.EditorControlGroup("Name", @<div>*@Html.TextBoxFor(x => x.Name, new { style = "color:red" })*</div>)
+
+    <h2>Override Group Template</h2>
+    @Html.EditorControlGroup("Name")
+
+</div>
